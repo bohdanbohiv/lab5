@@ -5,9 +5,14 @@ import java.util.List;
 
 public class FlowerBucket {
     List<FlowerPack> flowerPacks = new ArrayList<>();
+    private final static int MAX_SIZE = 100;
 
     public void addFlowerPack(FlowerPack flowerPack) {
-        flowerPacks.add(flowerPack);
+        if (flowerPacks.size() < MAX_SIZE) {
+            flowerPacks.add(flowerPack);
+        } else {
+            System.out.println("No more space");
+        }
     }
 
     public double getPrice() {
