@@ -3,7 +3,7 @@ package FlowerStore;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FlowerBucket {
+public class FlowerBucket extends Item {
     List<FlowerPack> flowerPacks = new ArrayList<>();
     private final static int MAX_SIZE = 100;
 
@@ -21,5 +21,10 @@ public class FlowerBucket {
             price += flowerPack.getPrice();
         }
         return price;
+    }
+
+    @Override
+    public String getDescription() {
+        return "Flower bucket";
     }
 }
