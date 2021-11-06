@@ -23,7 +23,7 @@ public class Flower extends Item {
 
     @Override
     public String getDescription() {
-        return Arrays.toString(color) + type.toString() + "with" + sepalLength +
-                "sepal length";
+        return Arrays.toString(color) + " " + type.toString().toLowerCase() +
+                " with " + sepalLength + " sepal length";
     }
 }

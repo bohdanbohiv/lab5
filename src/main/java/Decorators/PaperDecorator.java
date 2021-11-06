@@ -7,6 +7,7 @@ public class PaperDecorator extends ItemDecorator {
 
     public PaperDecorator(Item item) {
         super(item);
+        this.item = item;
     }
 
     @Override
@@ -16,6 +17,6 @@ public class PaperDecorator extends ItemDecorator {
 
     @Override
     public String getDescription() {
-        return super.getDescription() + "wrapped in paper";
+        return item.getDescription() + " wrapped in paper";
     }
 }

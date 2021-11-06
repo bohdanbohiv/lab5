@@ -7,6 +7,7 @@ public class RibbonDecorator extends ItemDecorator {
 
     public RibbonDecorator(Item item) {
         super(item);
+        this.item = item;
     }
 
     @Override
@@ -16,6 +17,6 @@ public class RibbonDecorator extends ItemDecorator {
 
     @Override
     public String getDescription() {
-        return super.getDescription() + "with ribbon";
+        return item.getDescription() + " with ribbon";
     }
 }

@@ -7,6 +7,7 @@ public class BasketDecorator extends ItemDecorator {
 
     public BasketDecorator(Item item) {
         super(item);
+        this.item = item;
     }
 
     @Override
@@ -16,6 +17,6 @@ public class BasketDecorator extends ItemDecorator {
 
     @Override
     public String getDescription() {
-        return super.getDescription() + "in basket";
+        return item.getDescription() + " in basket";
     }
 }
