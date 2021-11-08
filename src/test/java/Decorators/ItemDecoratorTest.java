@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ItemDecoratorTest {
-    Item roseItem;
-    Item chamomileItem;
+    private Item roseItem;
+    private Item chamomileItem;
 
     @BeforeEach
     void setUp() {

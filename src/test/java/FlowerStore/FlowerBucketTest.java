@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FlowerBucketTest {
-    FlowerBucket flowerBucket;
+    private FlowerBucket flowerBucket;
 
     @BeforeEach
     void setUp() {
