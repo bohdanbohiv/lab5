@@ -17,8 +17,7 @@ class UserTest {
 
     @Test
     void constructor() {
-        assertEquals(0, sender.id);
-        assertEquals(1, receiver.id);
+        assertEquals(1, receiver.id - sender.id);
     }
 
     @Test
